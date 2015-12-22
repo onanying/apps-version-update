@@ -31,4 +31,4 @@ AppsVersionUpdate 采用php+html5+css3开发
 ![image](https://github.com/onanying/AppsVersionUpdate/blob/master/screenshot/version_list.png?raw=true)
 
 *  永远下载最新版本的url地址
-![image](https://github.com/onanying/AppsVersionUpdate/blob/master/screenshot/down_app_url.jpg?raw=true)
+![image](https://github.com/onanying/AppsVersionUpdate/blob/master/screenshot/down_app_url.png?raw=true)

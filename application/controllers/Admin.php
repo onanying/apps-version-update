@@ -4,12 +4,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Admin extends CI_Controller {
 
 	private $app_path = '';  // app存放路径
+	private $filename_prefix = '';  // 文件名前缀
 
 	function __construct(){
 		parent::__construct();
 		$this->load->model('admin_model');
 		$this->load->library('form_validation');
 		$this->app_path = $this->config->item('storage_dir');  // 载入配置
+		$this->filename_prefix = $this->config->item('filename_prefix');  // 载入配置
 	}
 
 	public function index(){
@@ -211,7 +213,7 @@ class Admin extends CI_Controller {
 
 				/* 上传开始 */
 				$config['upload_path'] = FCPATH.$this->app_path;
-				$config['file_name'] = "fitcome__p{$appid}__v{$version}.apk";
+				$config['file_name'] = "{$this->filename_prefix}__p{$appid}__v{$version}.apk";
 				$config['allowed_types'] = 'apk';
 				$config['overwrite'] = true;  // 覆盖已存在
 				$this->load->library('upload', $config);
