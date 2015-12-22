@@ -72,13 +72,13 @@ class Admin_model extends CI_Model {
         return $this->db->insert_id();
     }
 
-	function add_versions( $appid, $iamge ){
+	function add_versions( $appid, $image ){
         $data = array(
             'apps_id' => $appid ,
-            'file_name' => $iamge['file_name'] ,
+            'file_name' => $image['file_name'] ,
             'version' => $this->input->post('version') ,
             'code' => $this->input->post('code') ,
-            'file_size' => $iamge['file_size']*1024 ,
+            'file_size' => $image['file_size']*1024 ,
             'content_cn' => $this->input->post('content_cn') ,
             'content_en' => $this->input->post('content_en') ,
             'compel' => (int)$this->input->post('compel') ,
@@ -100,7 +100,7 @@ class Admin_model extends CI_Model {
         return $this->db->affected_rows();
     }
 
-	function set_versions( $id, $iamge ){
+	function set_versions( $id, $image ){
         $data = array(
             'version' => $this->input->post('version') ,
             'code' => $this->input->post('code') ,
@@ -109,9 +109,9 @@ class Admin_model extends CI_Model {
             'compel' => (int)$this->input->post('compel') ,
             'datetime' => date('Y-m-d H:i:s')
         );
-        if(!is_null($iamge)){
-        	$data['file_name'] = $iamge['file_name'];
-        	$data['file_size'] = $iamge['file_size']*1024;
+        if(!is_null($image)){
+        	$data['file_name'] = $image['file_name'];
+        	$data['file_size'] = $image['file_size']*1024;
         }
         $this->db->where_in('id', $id);
         $this->db->update('versions', $data);

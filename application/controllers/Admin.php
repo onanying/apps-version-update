@@ -235,6 +235,16 @@ class Admin extends CI_Controller {
 					}
 				}else{
 					// 修改
+					$row = $this->admin_model->get_versions_row_by_id($id);
+					if(is_null($row)){
+						die('id not exist');
+					}
+					// 如果变更了文件名，删除旧apk
+					if(!is_null($image) && $row->file_name!=$image['file_name']){
+						$file = FCPATH.$this->app_path.'/'.$row->file_name;
+						@unlink($file);
+					}
+					// 更新数据
 					$this->admin_model->set_versions($id, $image);
 					$data['errcode'] = 0;
 					$data['errmsg'] = '修改成功';
@@ -292,7 +302,7 @@ class Admin extends CI_Controller {
 		}
 		// 删除apk与id
 		$file = FCPATH.$this->app_path.'/'.$row->file_name;
-		unlink($file);
+		@unlink($file);
 		$this->admin_model->remove_versions($id);
 		// 返回列表
 		$base_url = $this->config->item('base_url');
