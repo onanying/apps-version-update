@@ -1,0 +1,19 @@
+.header {
+	margin-top: 50px;
+	text-align: center;
+}
+.header h1 {
+	font-size: 250%;
+	color: #333;
+	margin-top: 30px;
+	font-weight: normal;	  
+}
+.header p {
+	font-size: 14px;
+}
+.admin-content{
+	min-height:600px;
+}
+.table-main .am-btn{
+  background: #fff;
+}
