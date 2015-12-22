@@ -6,6 +6,7 @@ AppsVersionUpdate 是一个提供给需要在线自动更新版本的手机或�
 
 AppsVersionUpdate 采用php+html5+css3开发
 
+*  APP更新接口返回json格式的更新数据
 *  支持多个app的版本更新管理
 *  提供永远下载最新版本的url地址
 *  输出可永远下载最新版本的二维码
@@ -18,3 +19,16 @@ AppsVersionUpdate 采用php+html5+css3开发
 *  Step 3：打开application\config下的database.php，根据你的环境修改port、password、database参数
 *  Step 4：打开application\config下的config.php，根据你的需要修改 “中文备注” 的那几个参数，其他参数默认即可
 
+## 屏幕截图
+
+*  APP更新接口返回的json
+![image](https://github.com/onanying/AppsVersionUpdate/screenshot/json.png)
+
+*  APP列表
+![image](https://github.com/onanying/AppsVersionUpdate/screenshot/app_list.png)
+
+*  版本列表
+![image](https://github.com/onanying/AppsVersionUpdate/screenshot/version_list.png)
+
+*  永远下载最新版本的url地址
+![image](https://github.com/onanying/AppsVersionUpdate/screenshot/down_app_url.png)
