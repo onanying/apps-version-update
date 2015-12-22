@@ -9,12 +9,12 @@ AppsVersionUpdate 采用php+html5+css3开发
 *  支持多个app的版本更新管理
 *  提供永远下载最新版本的url地址
 *  输出可永远下载最新版本的二维码
-*  前后端都为开源框架开发，更好的扩展性，后端框架：CodeIgniter，前端框架：amazeui
+*  前后端都为开源框架开发，更好的扩展性。（后端框架：CodeIgniter，前端框架：amazeui）
 
-## web截图
+## 安装步骤
 
-
-
-## 安装说明
-
+*  Step 1：新建一个mysql的数据库
+*  Step 2：打开sql文件夹内的数据库文件，在新建立的数据库中执行
+*  Step 3：打开application\config下的database.php，根据你的环境修改port、password、database参数
+*  Step 4：打开application\config下的config.php，根据你的需要修改 “中文备注” 的那几个参数，其他参数默认即可
 
