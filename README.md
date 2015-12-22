@@ -22,13 +22,17 @@ AppsVersionUpdate 采用php+html5+css3开发
 ## 屏幕截图
 
 *  APP更新接口返回的json
-![image](https://github.com/onanying/AppsVersionUpdate/blob/master/screenshot/json.png?raw=true)
+
+![image](https://raw.githubusercontent.com/onanying/AppsVersionUpdate/master/screenshot/json.png)
 
 *  APP列表
-![image](https://github.com/onanying/AppsVersionUpdate/blob/master/screenshot/app_list.png?raw=true)
+
+![image](https://raw.githubusercontent.com/onanying/AppsVersionUpdate/master/screenshot/app_list.png)
 
 *  版本列表
-![image](https://github.com/onanying/AppsVersionUpdate/blob/master/screenshot/version_list.png?raw=true)
+
+![image](https://raw.githubusercontent.com/onanying/AppsVersionUpdate/master/screenshot/version_list.png)
 
 *  永远下载最新版本的url地址
-![image](https://github.com/onanying/AppsVersionUpdate/blob/master/screenshot/down_app_url.png?raw=true)
+
+![image](https://raw.githubusercontent.com/onanying/AppsVersionUpdate/master/screenshot/down_app_url.png)
