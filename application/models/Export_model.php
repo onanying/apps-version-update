@@ -12,10 +12,10 @@ class Export_model extends CI_Model {
 		$this->db->where('apps_id', $appid);
 		$this->db->order_by('id', 'DESC');
 		$this->db->limit(1, 0);
-        $query = $this->db->get();
-        if( $query->num_rows()==0 )
-            return NULL;
-        return $query->row();
+		$query = $this->db->get();
+		if( $query->num_rows()==0 )
+			return NULL;
+		return $query->row();
 	}
 
 }
