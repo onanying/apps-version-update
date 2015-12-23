@@ -18,8 +18,9 @@ AppsVersionUpdate 采用php+html5+css3开发
 *  Step 2：打开sql文件夹内的数据库文件，在新建立的数据库中执行
 *  Step 3：打开application\config下的database.php，根据你的环境修改port、password、database参数
 *  Step 4：打开application\config下的config.php，根据你的需要修改 “中文备注” 的那几个参数，其他参数默认即可
-*  Step 5：修改php.ini，使之支持大文件上传，修改 file_uploads = on; upload_tmp_dir = "/tmp"; upload_max_filesize = 50m; post_max_size = 50m; max_execution_time = 600; max_input_time = 600; memory_limit = 32m; 
-*  Step 6：使用浏览器进入config.php配置的base_url地址，后台管理默认用户名为 admin，默认密码为 123456
+*  Step 5：开启Apache的Rewrite模块
+*  Step 6：修改php.ini，使之支持大文件上传，修改 file_uploads = on; upload_tmp_dir = "/tmp"; upload_max_filesize = 50m; post_max_size = 50m; max_execution_time = 600; max_input_time = 600; memory_limit = 32m; 
+*  Step 7：使用浏览器进入config.php配置的base_url地址，后台管理默认用户名为 admin，默认密码为 123456
 
 ## 屏幕截图
 
