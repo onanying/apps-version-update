@@ -1,10 +1,10 @@
 ﻿## 简介
 
-AppsVersionUpdate 是一个提供给需要在线自动更新版本的手机或桌面软件的APP接口与后台管理的web程序。
+一个提供给需要在线自动更新版本的手机或桌面软件的APP接口与后台管理的web程序。
 
 ## 提供了以下功能：
 
-AppsVersionUpdate 采用php+html5+css3开发
+本项目 采用php+html5+css3开发
 
 *  APP更新接口返回json格式的更新数据
 *  支持多个app的版本更新管理
