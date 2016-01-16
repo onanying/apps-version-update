@@ -11,9 +11,15 @@
 .header p {
 	font-size: 14px;
 }
+.am-topbar-inverse{
+	background: #3385ff;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #2d78f4;
+}
 .admin-content{
 	min-height:600px;
 }
 .table-main .am-btn{
-  background: #fff;
+	background: #fff;
 }
